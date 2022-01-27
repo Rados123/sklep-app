@@ -80,14 +80,25 @@ class ProductController extends Controller
             $order= new Order;
             $order->product_id=$cart['product_id'];
             $order->user_id=$cart['user_id'];
-            $order->status='pending';
+            $order->status='realizowana';
             $order->payment_method=$req->payment;
-            $order->payment_status='pending';
+            $order->payment_status='realizowana';
             $order->address=$req->address;
             $order->save();
             Cart::where('user_id',$userId)->delete();
 
         }
         return redirect('/');
+    }
+    function myOrders()
+    {
+        $userId=Session::get('user')['id'];
+        $orders= DB::table('orders')
+        ->join('products','orders.product_id', '=','products.id')
+        ->where('orders.user_id',$userId)
+        ->get();
+
+        return view('myorders',['orders'=>$orders]);
+
     }
 }

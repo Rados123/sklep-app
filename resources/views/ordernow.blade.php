@@ -26,8 +26,8 @@
                 </div>
                 <div class="form-group">
                   <label for="pwd">Forma Płatności</label> <br> <br>
-                  <input type="radio" value="cash" name="payment"> <span>Płatność online</span> <br> <br>
-                  <input type="radio" value="cash" name="payment"> <span>Płatność przy odbiorze</span> <br> <br>
+                  <input type="radio" value="Płatność online" name="payment"> <span>Płatność online</span> <br> <br>
+                  <input type="radio" value="Płatność przy odbiorze" name="payment"> <span>Płatność przy odbiorze</span> <br> <br>
                 </div>
                 <button type="submit" class="btn btn-default">Zakup</button>
               </form>
