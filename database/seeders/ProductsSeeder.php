@@ -15,20 +15,14 @@ class ProductsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products')->insert([
-            'name'=>'Papiez',
-            'price'=>'2137',
-            'category'=>'bezcenne',
-            'description'=>'Wielki Polak Nasz Rodak',
-            'gallery'=>'https://www.wykop.pl/cdn/c3201142/comment_8WzNzGFSTZitBq1bLY2Uhz4ScFXj8Vf9.jpg',
+        DB::table('products')->insert(
 
-        ],
         [
-            'name'=>'Papiez',
-            'price'=>'2137',
-            'category'=>'bezcenne',
-            'description'=>'Wielki Polak Nasz Rodak',
-            'gallery'=>'https://www.wykop.pl/cdn/c3201142/comment_8WzNzGFSTZitBq1bLY2Uhz4ScFXj8Vf9.jpg',
+            'name'=>'Peperomia pereskiifolia',
+            'price'=>'35.00',
+            'category'=>'Rosliny proste w pielegnacji',
+            'description'=>'Miniaturowa Peperomia pereskiifolia to nieklopotliwa i szybko rosnaca roslinka, ktora odnajdzie sie swietnie na polce lub parapecie (najlepiej wystawy wschodniej).',
+            'gallery'=>'https://www.jungleboogie.pl/wp-content/uploads/2022/01/peperomia-pereskiifolia_8x13-1_1642851240-990x1320.jpg',
 
         ],
     );    
