@@ -28,11 +28,16 @@
     .custom-product {
         display: block;
         overflow: auto;
-;
-
+    }
+    .custom-login {
+        display: block;
+        overflow: auto;
     }
     .detail-img {
         height: 400px;
+    }
+    .card {
+        margin: 5px;
     }
     .footer {
         /*position:absolute;*/
@@ -41,10 +46,7 @@
         height:60px;   /* Height of the footer */
         background:#6cf;
     }
-    .item-list {
-        border-bottom: 1px solid black;
-        margin-bottom: 20px;
-    }
+
     /* .content-flex {
         display:flex;
         justify-content:center;
