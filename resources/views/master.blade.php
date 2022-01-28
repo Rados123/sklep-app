@@ -24,10 +24,7 @@
         height: 500px;
         padding-top: 100px;
     }
-    img.card-img{
-        height: 400px;
-        width: 200px;
-    }
+
     .custom-product {
         display: block;
         overflow: auto;
@@ -58,3 +55,11 @@
 
 </style>
 </html>
+
+
+<!--
+        img.card-img{
+        height: 400px;
+        width: 200px;
+    }
+ -->
