@@ -6,15 +6,15 @@
             <tbody>
               <tr>
                 <td>Łączna cena</td>
-              <td>{{$total}}zł </td>
+              <td>{{$total}} zł </td>
               </tr>
               <tr>
                 <td>Opłata za dostawę </td>
-                <td>10zł</td>
+                <td>10 zł</td>
               </tr>
               <tr>
                 <td>Suma do zapłaty</td>
-              <td>$ {{$total+10}}</td>
+              <td>{{$total+10}} zł</td>
               </tr>
             </tbody>
           </table>
