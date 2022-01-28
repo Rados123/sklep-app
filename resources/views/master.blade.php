@@ -17,7 +17,7 @@
     <br>
     @yield('content')
     <!-- </div> -->
-    <!-- {{View::make('footer')}} -->
+    {{View::make('footer')}}
 </body>
 <style>
     .custom-login{
@@ -29,7 +29,9 @@
         width: 200px;
     }
     .custom-product {
-        height: 600px;
+        display: block;
+        overflow: auto;
+;
 
     }
     .detail-img {
