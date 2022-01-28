@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
-    //
+    
     function index()
     {
         $data= Product::all();
@@ -72,7 +72,7 @@ class ProductController extends Controller
     }
     function orderPlace(Request $req)
     {
-        //dodać if jeżeli address jest pusty
+        
         $userId=Session::get('user')['id'];
         $allCart= Cart::where('user_id',$userId)->get();
         foreach($allCart as $cart)
@@ -102,11 +102,11 @@ class ProductController extends Controller
 
     }
 
-    //used only by admin
+    
     public function insertform(){
         return view('createproduct');
         }
-
+    
     function createProduct(Request $req)
     {
        // return $req->input();
