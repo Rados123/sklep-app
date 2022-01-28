@@ -7,7 +7,7 @@ if(Session::has('user'))
     $total= ProductController::cartItem();
 }
 ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-orange">
   <a class="navbar-brand" href="/">Sklep internetowy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -23,6 +23,9 @@ if(Session::has('user'))
           <a class="nav-link" href="/myorders">Zamówienia</a>
         </li> 
         <a class="nav-link" href="/cartlist">Koszyk({{$total}})</a>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="/createproduct">Zarejestruj produkt</a>
+        </li> -->
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}</a>
             <div class="dropdown-menu">

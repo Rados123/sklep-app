@@ -35,5 +35,10 @@ Route::get("removecart/{id}", [ProductController::class,'removeCart']);
 Route::get("ordernow", [ProductController::class,'orderNow']);
 Route::post("orderplace", [ProductController::class,'orderPlace']);
 Route::get("myorders", [ProductController::class,'myOrders']);
+//admin
+Route::get('/createproduct', function () {
+    return view('createproduct');
+});
+Route::post("createproduct", [ProductController::class, 'createProduct']);
 
 

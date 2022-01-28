@@ -101,4 +101,22 @@ class ProductController extends Controller
         return view('myorders',['orders'=>$orders]);
 
     }
+
+    //used only by admin
+    public function insertform(){
+        return view('createproduct');
+        }
+
+    function createProduct(Request $req)
+    {
+       // return $req->input();
+       $product = new Product;
+       $product->name=$req->name;
+       $product->price=$req->price;
+       $product->category=$req->category;
+       $product->description=$req->description;
+       $product->gallery=$req->gallery;
+       $product->save();
+       return redirect('/');
+    }
 }
