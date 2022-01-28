@@ -23,9 +23,9 @@ if(Session::has('user'))
           <a class="nav-link" href="/myorders">Zamówienia</a>
         </li> 
         <a class="nav-link" href="/cartlist">Koszyk({{$total}})</a>
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="/createproduct">Zarejestruj produkt</a>
-        </li> -->
+        </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{Session::get('user')['name']}}</a>
             <div class="dropdown-menu">
