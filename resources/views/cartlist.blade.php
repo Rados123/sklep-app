@@ -3,7 +3,6 @@
 <div class="custom-product">
     <div class="col-sm-4">
         <h5>Zawartość Koszyka</h5>
-        <a class="btn btn-success" href="ordernow">Zamów</a><br>
     <div class="card-deck">
     @foreach ($products as $item)
         <div class="item {{$item->id}}" style="width:400px">
