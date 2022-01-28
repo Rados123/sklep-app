@@ -13,7 +13,7 @@
             <div class="card-body">
             <h4 class="card-title">{{$item->name}}</h4>
             <p class="card-text">{{$item->description}}</p>
-            <a href="detail/{{$item->id}}" class="btn btn-card">Zobacz</a>
+            <a href="detail/{{$item->id}}" class="btn btn-success">Zobacz</a>
             <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning">Usuń z Koszyka</a>
             </div>
         </div>
