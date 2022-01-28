@@ -9,7 +9,7 @@
             <a href="/">Wróć</a>
             <h2 class="detail-title">{{$product['name']}}</h4>
             <h5 class="detail-price">Cena: {{$product['price']}}zł</h3>
-            <h6 class="detail-category">Kategodia: {{$product['category']}}</h3>
+            <h6 class="detail-category">Kategoria: {{$product['category']}}</h3>
             <p class="detail-text">{{$product['description']}}</p>
             <form action="/add_to_cart" method="POST">
                 @csrf
