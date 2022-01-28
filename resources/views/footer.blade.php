@@ -1,9 +1,11 @@
-<div class="footer">
-  <div class="footer-header">
-    Featured
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
   </div>
-  <div class="footer-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-  </div>
-</div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
